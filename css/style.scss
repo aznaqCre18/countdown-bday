@@ -1,0 +1,133 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../assets/font/Montserrat-Regular.ttf);
+}
+
+$font-stack: Montserrat;
+
+body {
+  margin: 0;
+  cursor: crosshair;
+  background-size: cover;
+}
+
+canvas {
+  display: block;
+  max-height: 100vh;
+  max-width: 100vw;
+  background-color: black;
+}
+// h1 {
+//   position: fixed;
+//   color: #fff;
+//   font-family: $font-stack;
+//   font-size: 2em;
+//   font-weight: 900;
+//   -webkit-user-select: none;
+//   user-select: none;
+//   text-align: center;
+//   display: flex;
+//   left: 0;
+//   right: 0;
+//   top: 0;
+//   bottom: 0;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+/* general styling */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #000;
+  max-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: $font-stack;
+}
+
+#title {
+  color: #333;
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+  display: flex;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  color: #fff;
+  flex-direction: column;
+}
+
+@media (max-width: 580px) {
+  h1 {
+    font-size: 1rem;
+    text-transform: capitalize;
+  }
+
+  li {
+    display: inline-block;
+    font-size: 1rem;
+    list-style-type: none;
+    padding: 1rem;
+    text-transform: uppercase;
+  }
+  li span {
+    display: block;
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 0.7rem;
+    text-transform: capitalize;
+  }
+
+  li {
+    display: inline-block;
+    font-size: 0.7rem;
+    list-style-type: none;
+    padding: 0.7rem;
+    text-transform: uppercase;
+  }
+  li span {
+    display: block;
+    font-size: 0.7rem !important;
+  }
+}
